@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // level 1
+
+        // 1
+        let firstName = "Emre",
+            lastName = "Kurt",
+            country = "Turkey",
+            city = "Antalya",
+            age = 26,
+            isMarried = false,
+            thisYear = 2022
+        
+        // 2
+        console.log(
+            typeof firstName,
+            typeof lastName,
+            typeof country,
+            typeof city,
+            typeof age,
+            typeof isMarried,
+            typeof thisYear
+        )
+
+        // 3
+        console.log("10" === 10)
+        console.log(parseInt('9.8') === 10)
+
+        // 4
+        console.log(
+            1 == "1",
+            1 === 1,
+            1 == true
+        )
+        console.log(
+            "1" === 1,
+            1 == 2,
+            1 == false
+        )
+
+        // 5
+        console.log(
+            4 > 3,      //true
+            4 >= 3,     //true
+            4 < 3,      //false
+            4 <= 3,     //false
+            4 == 4,     //true
+            4 === 4,    //true
+            4 != 4,     //false
+            4 !== 4,    //false
+            4 != '4',   //false
+            4 == '4',   //true
+            4 === '4',  //false
+            "python".length != "jargon".length
+        )
+
+        // 6
+        console.log(
+            4 > 3 && 10 < 12,       //true
+            4 > 3 && 10 > 12,       //false
+            4 > 3 || 10 < 12,       //true
+            4 > 3 || 10 > 12,       //true
+            !(4 > 3),               //false
+            !(4 < 3),               //true
+            !(false),               //true
+            !(4 > 3 && 10 < 12),    //false
+            !(4 > 3 && 10 > 12),    //true
+            !(4 === '4'),           //true
+            !"dragon".includes("on") && !"python".includes("on")    //false
+        )
+
+        // 7
+        let date = new Date;
+        console.log(
+            date.getFullYear(),
+            date.getMonth() + 1,
+            date.getDate(),
+            date.getDay() + 1,
+            date.getHours(),
+            date.getMinutes(),
+            date.getTime()
+        )
+
+        // level 2
+
+        // 1
+        /*
+        let base = prompt("Area of Triangle", "Enter base")
+        let height = prompt("Area of Triangle", "Enter height")
+
+        let area = 0.5 * base * height
+
+        alert(`The area of the triangle is ${area}`)
+        */
+        // 2
+        /*
+        let a = prompt("Perimeter of Triangle", "Enter side a"),
+            b = prompt("Perimeter of Triangle", "Enter side b"),
+            c = prompt("Perimeter of Triangle", "Enter side c")
+
+        let perimiter = parseInt(a) + parseInt(b) + parseInt(c)
+
+        alert(`The perimiter of the triangle is ${perimiter}`)
+        */
+        // 3
+        /*
+        let a = prompt("Enter side a"),
+            b = prompt("Enter side b")
+
+        let perimiter = 2 * (parseInt(a) + parseInt(b))
+        let area = a * b
+
+        alert(`The perimiter of the rectangle is ${perimiter} \nThe area of the rectangle is ${area}`)
+        */
+
+        // 4
+        /*
+        let r = prompt("Enter r")
+
+        const PI = 3.14
+
+        let area = (PI * r * r).toFixed(2)
+        let circumference  = 2 * PI * r
+
+        alert(`The circumference of the circle is ${circumference} \nThe area of the circle is ${area}`)
+        */
+
+        // 5 
+        let x, y
+        x = 0
+        y = 2 * x - 2
+        console.log(`y: ${y}`)
+
+        y = 0
+        x = y / 2 + 1
+        console.log(`x: ${x}`)
+
+        // 6
+        let x1 = 2, 
+            x2 = 6,
+            y1 = 2,
+            y2 = 10
+            
+        x = x2 - x1
+        y = y2-y1
+
+        console.log(y / x)
+
+        // 7
+        // I can't understand this question.
+
+        // 8
+        x = -3
+        y = x**2 + 6 * x + 9
+        console.log(`y: ${y}`)
+
+        // 9
+        /*
+        let hours = prompt("Enter hours")
+        let rate = prompt("Enter rate per hour")
+
+        let earn = hours * rate
+
+        alert(`Hours: ${hours} \nRate per hour: ${rate} \nYour weekly earning is ${earn}`)
+        */
+
+        // 10
+        let control = firstName.length > 7 ? "your name is long" : "your name is short"
+
+        console.log(control)
+
+        // 11
+        control = firstName.length > lastName.length ? `Your first name, ${firstName} is longer than your family name, ${lastName}` : `Your first name, ${firstName} is no longer than your family name, ${lastName}`
+
+        console.log(control)
+
+        // 12
+        let myAge = 250
+        let yourAge = 25
+
+        console.log(`I am ${myAge - yourAge} years older than you.`)
+
+        // 13
+        /*
+        let birthYear = prompt("Enter birth year")
+        let hisAge = date.getFullYear() - parseInt(birthYear)
+
+        control = hisAge >= 18 ? `You are ${hisAge}. You are old enough to drive` : `You are ${hisAge}. You will be allowed to drive after ${18 - hisAge} years.`
+
+        alert(control)
+        */
+
+        // 14
+        /*
+        let second = 31536000
+        let liveYear = prompt("Enter number of years you live")
+
+        alert(`Enter number of years you live: ${liveYear} \nYou lived ${second * liveYear} seconds.`)
+        */
+        // 15
+        let year = date.getFullYear()
+        let month = date.getMonth() + 1
+        let day = date.getDate()
+        let hour = date.getHours()
+        let minute = date.getMinutes()
+        
+        month = month.toString().length < 2 ? "0" + month : month
+        day = day.toString().length < 2 ? "0" + day : day
+        hour = hour.toString().length < 2 ? "0" + hour : hour
+        minute = minute.toString().length < 2 ? "0" + minute : minute
+        
+        console.log(
+            `${year}-${month}-${day} ${hour}:${minute}`,
+            `${day}-${month}-${year} ${hour}:${minute}`,
+            `${day}/${month}/${year} ${hour}:${minute}`
+        )
+
+        // level 3
+
+        // 1
+        console.log(`${year}-${month}-${day} ${hour}:${minute}`)        
+
+    </script>
+</body>
+</html>
