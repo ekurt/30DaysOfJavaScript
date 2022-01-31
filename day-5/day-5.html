@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="countries.js"></script>
+    <script src="web_techs.js"></script>
+
+    <script>
+
+        // level 1
+
+        // 1
+        let arr1 = Array()
+        console.log(arr1);
+
+        // 2
+        let arr2 = Array(7);
+        console.log(arr2)
+
+        // 3
+        console.log(arr2.length)
+
+        // 4
+        let first = 0
+            middle = Math.ceil((arr2.length / 2)) - 1,
+            last = arr2.length - 1
+
+        console.log(first, middle, last)
+        console.log(arr2[first], arr2[middle], arr2[last])
+
+        // 5
+        let mixedDataTypes = [
+            "string",
+            0,
+            3.14,
+            true,
+            undefined,
+            null
+        ]
+        console.log(mixedDataTypes)
+
+        // 6
+        let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
+
+        // 7 
+        console.log(itCompanies)
+
+        // 8
+        console.log(itCompanies.length)
+
+        // 9
+        console.log(itCompanies[0], itCompanies[3], itCompanies[6])
+
+        // 10
+        console.log(itCompanies.join(" "))
+
+        // 11
+        for (let i = 0; i <= itCompanies.length - 1; i++) {
+
+            //itCompanies[i] = itCompanies[i].toUpperCase()
+
+        }
+
+        console.log(itCompanies)
+
+        // 12
+        let firstPart = itCompanies.slice(0, itCompanies.length - 1)
+        console.log(`${firstPart.join(', ')} and ${itCompanies[itCompanies.length -1]} are big IT companies.`)
+
+        // 13 
+        let company = "Facebook"      
+
+        if (itCompanies.includes(company)) {
+           console.log(`${company} is here.`); 
+        } else {
+            console.log(`${company} is not found.`)
+        }
+
+        // 14      
+        let result = Array()
+
+        for (let i = 0; i <= itCompanies.length - 1; i++) {
+
+            let arr = [itCompanies[i].toLowerCase()]
+            let a = arr.toString()
+            a = a.split('')
+           
+            let o = 0;
+
+            for (let j = 0; j <= a.length - 1; j++) {
+
+                if (a[j].includes('o')) {
+                    o++
+                }
+
+            }
+
+            if (o >= 2) {
+                result.push(itCompanies[i])
+            }
+
+        }
+
+        console.log(result)
+
+        // 15
+        console.log(itCompanies.sort())
+
+        // 16 
+        console.log(itCompanies.reverse())
+
+        // 17 
+        console.log(itCompanies.slice(0, 3))
+
+        // 18       
+        length = itCompanies.length
+        console.log(itCompanies.slice(length - 3, length))
+
+        // 19 
+        length = length / 2
+        console.log(itCompanies.slice(length, length + 1))
+
+        // 20
+        itCompanies.shift()
+        console.log(itCompanies)
+
+        // 21
+        /*
+        length = itCompanies.length
+
+        if (length % 2 == 0) {
+            itCompanies.splice(length - 1, 1)
+        } else {
+            itCompanies.splice(length - 1, 2)
+        }
+        
+        console.log(itCompanies)
+        */
+
+        // 22
+        itCompanies.pop()
+        console.log(itCompanies)
+
+        // 23 
+        itCompanies = []
+        console.log(itCompanies)
+
+        // level 2
+
+        // 1
+        // file include done
+
+        // 2
+        let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+        
+        text = text.replace(/[.,]/g, '')
+        text = text.split(' ')
+        
+        console.log(text)
+        console.log(text.length)
+
+        // 3
+        const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+
+        if (!shoppingCart.includes('Meat')) {
+            shoppingCart.unshift('Meat')            
+        }
+
+        if (!shoppingCart.includes('Sugar')) {
+            shoppingCart.push('Sugar')            
+        }
+
+        let isAllergicToHoney = true
+
+        if (isAllergicToHoney) {
+            shoppingCart.splice(4, 1)            
+        }
+
+        let index = shoppingCart.indexOf('Tea')
+        shoppingCart[index] = "Green Tea"
+
+        console.log(shoppingCart)
+
+        // 4
+        if (countries.includes('Ethiopia')) {
+            index = countries.indexOf('Ethiopia')
+            console.log(countries[index].toUpperCase())
+        } else {
+            countries.push('Ethiopia')
+        }
+
+        // 5
+        if (webTechs.includes('Sass')) {
+            index = webTechs.indexOf('Sass')
+            console.log(`${webTechs[index]} is a CSS preprocess.`)
+        } else {
+            webTechs.push('Sass')
+            console.log(webTechs)
+        }
+
+        // 6
+        const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+        const backEnd = ['Node','Express', 'MongoDB']
+        const fullStack = frontEnd.concat(backEnd)
+
+        console.log(fullStack)
+
+        // level 3
+
+        // 1
+        const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+        ages.sort()
+        //ages.pop()
+        length = ages.length
+        let half = Math.floor(length / 2)
+        let sum = 0
+
+        min = ages[0]
+        max = ages[length - 1]
+        
+        console.log(`Min: ${min}`)
+        console.log(`Max: ${max}`)
+
+        if (length % 2 == 0) {
+            console.log("Middle: " + ages.slice(half - 1, half + 1))
+        } else {
+            console.log("Middle: " + ages.slice(half, half + 1))
+        }
+
+        for (let i = 0; i <= length - 1; i++) {
+            sum += ages[i]
+        }
+
+        let avarage = sum / length
+
+        console.log(`Avarage: ${avarage}`)
+
+        console.log(`Range: ${max - min}`)
+
+        console.log(Math.abs(min - avarage), Math.abs(max - avarage))
+
+        // 2
+        console.log(countries)
+
+        console.log(countries.slice(0, 10))
+
+        // 3
+        //countries.pop()
+        length = countries.length
+        half = Math.floor(length / 2)
+      
+        if (length % 2 == 0) {
+            console.log("Middle: " + countries.slice(half - 1, half + 1))
+        } else {
+            console.log("Middle: " + countries.slice(half, half + 1))
+        }
+
+        // 4
+        if (length % 2 == 0) {
+            arr1 = countries.slice(0, half)
+            console.log(arr1)
+            arr2 = countries.slice(half, length)
+            console.log(arr2)
+        } else {
+            arr1 = countries.slice(0, half + 1)
+            console.log(arr1)
+            arr2 = countries.slice(half + 1, length)
+            console.log(arr2)
+        }
+
+    </script>
+
+</body>
+</html>
