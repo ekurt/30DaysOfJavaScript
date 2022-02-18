@@ -6,7 +6,7 @@
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-1)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-2)
-> - [x] 3) [Booleans, Operators, Date](https://github.com/ekurt/30DaysOfJavaScript/tree/main/> day-3)
+> - [x] 3) [Booleans, Operators, Date](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-3)
 > - [x] 4) [Conditionals](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-4)
 > - [x] 5) [Arrays](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-5)
 > - [x] 6) [Loops](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-6)
