@@ -1,32 +1,32 @@
 # 30 Days of JavaScript
 
-- [x] Introduction
-- [x] Data Types
-- [x] Booleans, Operators, Date
-- [x] Conditionals
-- [x] Arrays
-- [x] Loops
-- [x] Functions
-- [x] Objects
-- [ ] Higher Order Functions
-- [ ] Sets and Maps
-- [ ] Destructuring and Spreading
-- [ ] Regular Expressions
-- [ ] Console Object Methods
-- [ ] Error Handling
-- [ ] Classes
-- [ ] JSON
-- [ ] Web Storages
-- [ ] Promises
-- [ ] Closure
-- [ ] Writing Clean Code
-- [ ] DOM
-- [ ] Manipulating DOM Object
-- [ ] Event Listeners
-- [ ] Mini Project: Solar System
-- [ ] Mini Project: World Countries Data Visulalization 1
-- [ ] Mini Project: World Countries Data Visulalization 2
-- [ ] Mini Project: Portfolio
-- [ ] Mini Project: Leaderboard
-- [ ] Mini Project:Animating characters
-- [ ] Final Projects
+- [x] 1 - Introduction
+- [x] 2 - Data Types
+- [x] 3 - Booleans, Operators, Date
+- [x] 4 - Conditionals
+- [x] 5 - Arrays
+- [x] 6 - Loops
+- [x] 7 - Functions
+- [x] 8 - Objects
+- [ ] 9 - Higher Order Functions
+- [ ] 10 - Sets and Maps
+- [ ] 11 - Destructuring and Spreading
+- [ ] 12 - Regular Expressions
+- [ ] 13 - Console Object Methods
+- [ ] 14 - Error Handling
+- [ ] 15 - Classes
+- [ ] 16 - JSON
+- [ ] 17 - Web Storages
+- [ ] 18 - Promises
+- [ ] 19 - Closure
+- [ ] 20 - Writing Clean Code
+- [ ] 21 - DOM
+- [ ] 22 - Manipulating DOM Object
+- [ ] 23 - Event Listeners
+- [ ] 24 - Mini Project: Solar System
+- [ ] 25 - Mini Project: World Countries Data Visulalization 1
+- [ ] 26 - Mini Project: World Countries Data Visulalization 2
+- [ ] 27 - Mini Project: Portfolio
+- [ ] 28 - Mini Project: Leaderboard
+- [ ] 29 - Mini Project:Animating characters
+- [ ] 30 - Final Projects
