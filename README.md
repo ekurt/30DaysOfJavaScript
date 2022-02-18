@@ -1,1 +1,32 @@
 # 30 Days of JavaScript
+
+- [x] Introduction
+- [x] Data Types
+- [x] Booleans, Operators, Date
+- [x] Conditionals
+- [x] Arrays
+- [x] Loops
+- [x] Functions
+- [x] Objects
+- [ ] Higher Order Functions
+- [ ] Sets and Maps
+- [ ] Destructuring and Spreading
+- [ ] Regular Expressions
+- [ ] Console Object Methods
+- [ ] Error Handling
+- [ ] Classes
+- [ ] JSON
+- [ ] Web Storages
+- [ ] Promises
+- [ ] Closure
+- [ ] Writing Clean Code
+- [ ] DOM
+- [ ] Manipulating DOM Object
+- [ ] Event Listeners
+- [ ] Mini Project: Solar System
+- [ ] Mini Project: World Countries Data Visulalization 1
+- [ ] Mini Project: World Countries Data Visulalization 2
+- [ ] Mini Project: Portfolio
+- [ ] Mini Project: Leaderboard
+- [ ] Mini Project:Animating characters
+- [ ] Final Projects
