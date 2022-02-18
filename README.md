@@ -1,14 +1,14 @@
 # 30 Days of JavaScript
 
-- [x] 1 - Introduction
-- [x] 2 - Data Types
-- [x] 3 - Booleans, Operators, Date
-- [x] 4 - Conditionals
-- [x] 5 - Arrays
-- [x] 6 - Loops
-- [x] 7 - Functions
-- [x] 8 - Objects
-- [ ] 9 - Higher Order Functions
+- [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-1)
+- [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-2)
+- [x] 3) [Booleans, Operators, Date](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-3)
+- [x] 4) [Conditionals](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-4)
+- [x] 5) [Arrays](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-5)
+- [x] 6) [Loops](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-6)
+- [x] 7) [Functions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-7)
+- [x] 8) [Objects](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-8)
+- [ ] 9) Higher Order Functions
 - [ ] 10 - Sets and Maps
 - [ ] 11 - Destructuring and Spreading
 - [ ] 12 - Regular Expressions
