@@ -1,8 +1,7 @@
 # 30 Days of JavaScript
 
 > Progress
-
-[################--------------------------------------------] **%26.6**
+> [################--------------------------------------------] **%26.6**
 
 - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-1)
 - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-2)
