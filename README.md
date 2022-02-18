@@ -1,6 +1,5 @@
 # 30 Days of JavaScript
 
-[############################################################] %100 \n
 [################--------------------------------------------] %26.6
 
 - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-1)
