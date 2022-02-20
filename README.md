@@ -2,7 +2,7 @@
 
 > ### Progress
 >
-> [################--------------------------------------------] **%26.6**
+> [##################------------------------------------------] **%29.9**
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-1)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-2)
@@ -12,7 +12,7 @@
 > - [x] 6) [Loops](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-6)
 > - [x] 7) [Functions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-7)
 > - [x] 8) [Objects](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-8)
-> - [ ] 9) Higher Order Functions
+> - [x] 9) [Higher Order Functions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-9)
 > - [ ] 10) Sets and Maps
 > - [ ] 11) Destructuring and Spreading
 > - [ ] 12) Regular Expressions

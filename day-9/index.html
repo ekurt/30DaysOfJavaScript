@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="./countries.js"></script>
+     
+    <script>
+
+        // level 1 
+
+        let countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+        const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        const products = [
+            { product: 'banana', price: 3 },
+            { product: 'mango', price: 6 },
+            { product: 'potato', price: ' ' },
+            { product: 'avocado', price: 8 },
+            { product: 'coffee', price: 10 },
+            { product: 'tea', price: '' },
+        ]
+
+        // 1
+        /*
+            .foreach() for array iteration
+            .map() for array iteration ana manipulation
+            .filter() for array data filter
+            .reduce() for data collecting like accumulator
+        */
+
+        // 2
+        // I dont understand this question
+
+        // 3
+        countries.forEach(item => console.log(item))
+
+        // 4
+        names.forEach(item => console.log(item))
+
+        // 5
+        numbers.forEach(item => console.log(item))
+
+        // 6
+        let newCountries = countries.map(item => item.toUpperCase())
+
+        console.log(newCountries)
+
+        // 7
+        let countriesLength = countries.map(item => item.length)
+
+        console.log(countriesLength)
+
+        // 8
+        let numberSquare = numbers.map(item => item * item)
+
+        console.log(numberSquare)
+
+        // 9
+        console.log(names.map(item => item = item.toUpperCase()))
+
+        // 10   
+        console.log(products.map(item => item.price))
+
+        // 11 
+        console.log(countries.filter(item => item.includes('land')))
+
+        // 12
+        console.log(countries.filter(item => item.length == 6))
+
+        // 13
+        console.log(countries.filter(item => item.length == 6))
+
+        // 14
+        console.log(countries.filter(item => item.startsWith('E')))
+
+        // 15
+        console.log(products.filter(item => typeof item.price == 'number' ))
+
+        // 16
+        const arrayMix = [1, 2, 3, 4, 'a', 'b', 'c', 'd']
+
+        function getStringLists(array) {
+            return array.filter(item => typeof item == 'string')
+        }
+
+        console.log(getStringLists(arrayMix))
+
+        // 17
+        let sum = numbers.reduce((sum, item) => sum + item)
+
+        console.log(sum)
+
+        // 18
+        console.log(countries.reduce((acc, item) => {
+            
+            let last = countries[countries.length - 1]
+
+            if (item != last) {
+                acc += ', ' + item
+            } else {
+                acc += ' and ' + last + ' are north European countries'
+            }
+            
+            return acc 
+        }))
+
+        // 19
+        /*
+            .some() returns true if the requested condition is consistent even for a single record
+            .every() returns false if the requested condition is not consistent even for a single record
+        */
+
+        // 20
+        console.log(names.some(item => item.length > 7))
+
+        // 21
+        console.log(names.every(item => item.includes('land')))
+
+        // 22
+        /*
+            .find() Return the first element which satisfies the condition
+            .findIndex() Return the position of the first element which satisfies the condition
+        */
+
+        // 23
+        console.log(countries.find(item => item.length == 6))
+
+        // 24
+        console.log(countries.findIndex(item => item.length == 6))
+
+        // 25
+        console.log(countries.findIndex(item => item == "Norway"))
+
+        // 26
+        console.log(countries.findIndex(item => item == "Russia"))
+
+        // level 2
+
+        // 1
+        let totalPrice = products.map(item => item.price).filter(item => typeof item == 'number').reduce((sum, cur) => sum += cur)
+
+        console.log(totalPrice)
+
+        // 2
+        totalPrice = products.reduce((sum, cur) => typeof cur.price == 'number' ? sum += cur.price : sum += 0, 0)
+
+        console.log(totalPrice)
+
+        // 3
+        countries = []
+        countries = [
+            'Afghanistan',
+            'Albania',
+            'Algeria',
+            'Andorra',
+            'Angola',
+            'Antigua and Barbuda',
+            'Argentina',
+            'Armenia',
+            'Australia',
+            'Austria',
+            'Azerbaijan',
+            'Bahamas',
+            'Bahrain',
+            'Bangladesh',
+            'Barbados',
+            'Belarus',
+            'Belgium',
+            'Belize',
+            'Benin',
+            'Bhutan',
+            'Bolivia',
+            'Bosnia and Herzegovina',
+            'Botswana',
+            'Brazil',
+            'Brunei',
+            'Bulgaria',
+            'Burkina Faso',
+            'Burundi',
+            'Cambodia',
+            'Cameroon',
+            'Canada',
+            'Cape Verde',
+            'Central African Republic',
+            'Chad',
+            'Chile',
+            'China',
+            'Colombi',
+            'Comoros',
+            'Congo (Brazzaville)',
+            'Congo',
+            'Costa Rica',
+            "Cote d'Ivoire",
+            'Croatia',
+            'Cuba',
+            'Cyprus',
+            'Czech Republic',
+            'Denmark',
+            'Djibouti',
+            'Dominica',
+            'Dominican Republic',
+            'East Timor (Timor Timur)',
+            'Ecuador',
+            'Egypt',
+            'El Salvador',
+            'Equatorial Guinea',
+            'Eritrea',
+            'Estonia',
+            'Ethiopia',
+            'Fiji',
+            'Finland',
+            'France',
+            'Gabon',
+            'Gambia, The',
+            'Georgia',
+            'Germany',
+            'Ghana',
+            'Greece',
+            'Grenada',
+            'Guatemala',
+            'Guinea',
+            'Guinea-Bissau',
+            'Guyana',
+            'Haiti',
+            'Honduras',
+            'Hungary',
+            'Iceland',
+            'India',
+            'Indonesia',
+            'Iran',
+            'Iraq',
+            'Ireland',
+            'Israel',
+            'Italy',
+            'Jamaica',
+            'Japan',
+            'Jordan',
+            'Kazakhstan',
+            'Kenya',
+            'Kiribati',
+            'Korea, North',
+            'Korea, South',
+            'Kuwait',
+            'Kyrgyzstan',
+            'Laos',
+            'Latvia',
+            'Lebanon',
+            'Lesotho',
+            'Liberia',
+            'Libya',
+            'Liechtenstein',
+            'Lithuania',
+            'Luxembourg',
+            'Macedonia',
+            'Madagascar',
+            'Malawi',
+            'Malaysia',
+            'Maldives',
+            'Mali',
+            'Malta',
+            'Marshall Islands',
+            'Mauritania',
+            'Mauritius',
+            'Mexico',
+            'Micronesia',
+            'Moldova',
+            'Monaco',
+            'Mongolia',
+            'Morocco',
+            'Mozambique',
+            'Myanmar',
+            'Namibia',
+            'Nauru',
+            'Nepal',
+            'Netherlands',
+            'New Zealand',
+            'Nicaragua',
+            'Niger',
+            'Nigeria',
+            'Norway',
+            'Oman',
+            'Pakistan',
+            'Palau',
+            'Panama',
+            'Papua New Guinea',
+            'Paraguay',
+            'Peru',
+            'Philippines',
+            'Poland',
+            'Portugal',
+            'Qatar',
+            'Romania',
+            'Russia',
+            'Rwanda',
+            'Saint Kitts and Nevis',
+            'Saint Lucia',
+            'Saint Vincent',
+            'Samoa',
+            'San Marino',
+            'Sao Tome and Principe',
+            'Saudi Arabia',
+            'Senegal',
+            'Serbia and Montenegro',
+            'Seychelles',
+            'Sierra Leone',
+            'Singapore',
+            'Slovakia',
+            'Slovenia',
+            'Solomon Islands',
+            'Somalia',
+            'South Africa',
+            'Spain',
+            'Sri Lanka',
+            'Sudan',
+            'Suriname',
+            'Swaziland',
+            'Sweden',
+            'Switzerland',
+            'Syria',
+            'Taiwan',
+            'Tajikistan',
+            'Tanzania',
+            'Thailand',
+            'Togo',
+            'Tonga',
+            'Trinidad and Tobago',
+            'Tunisia',
+            'Turkey',
+            'Turkmenistan',
+            'Tuvalu',
+            'Uganda',
+            'Ukraine',
+            'United Arab Emirates',
+            'United Kingdom',
+            'United States',
+            'Uruguay',
+            'Uzbekistan',
+            'Vanuatu',
+            'Vatican City',
+            'Venezuela',
+            'Vietnam',
+            'Yemen',
+            'Zambia',
+            'Zimbabwe'
+        ]
+
+        function categorizeCountries(endWith) {
+            return countries.filter(item => item.endsWith(endWith))
+        }
+
+        console.log(categorizeCountries('ia'))
+        console.log(categorizeCountries('land'))
+        console.log(categorizeCountries('stan'))
+
+        // 4
+        // I dont understand this question
+
+        // 5
+        function getFirstTenCountries(array) {
+
+            array.forEach((item, index) => {
+                if (index < 10) {
+                    console.log(item)
+                }
+            })
+
+        }
+
+        getFirstTenCountries(countries)
+
+        // 6
+        function getLastTenCountries(array) {
+
+            let last = array.length - 10
+
+            array.forEach((item, index) => {
+                if (index >= last) {
+                    console.log(item)
+                }
+            })
+
+        }
+
+        getLastTenCountries(countries)
+
+        // 7
+        function getNames(array) {
+            const charset = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'v', 'y', 'z', 'q', 'w', 'x']
+
+            let data, value = []
+
+            charset.forEach(char => {
+                data = array.filter(item => item.startsWith(char.toUpperCase()))
+                value.push({
+                    char: char,
+                    repeat: data.length
+                })
+            })
+
+            return value
+
+        }
+
+        console.log(getNames(countries))
+        
+        // level 3
+
+        // 1
+        /*
+        console.log(allCountries.sort(function (a, b) {
+            return b.name.localeCompare(a.name)
+        }))
+
+        console.log(allCountries.sort(function (a, b) {
+            return b.capital.localeCompare(a.capital)
+        }))
+        
+        console.log(allCountries.sort(function (a, b) {
+            return b.population - a.population
+        }))
+        */
+
+        // 2
+        function mostSpokenLanguages(array, amount) {
+            const arr = []
+            
+            arr.push(array.map(item => item.languages).join(',').split(',').sort((a, b) => a.localeCompare(b)))
+
+            let repeat = 1, dump = "", lang = []
+
+            for (let i = 0; i < arr[0].length; i++) {
+
+                dump = arr[0][i]
+
+                if (dump == arr[0][i + 1]) {
+                    repeat += 1
+                } else {
+                    lang.push({
+                        country: dump,
+                        count: repeat
+                    })
+                    repeat = 1
+                }
+
+            }
+
+            return lang.sort((a, b) => b.count - a.count).slice(0, amount)
+        }
+
+        console.log(mostSpokenLanguages(allCountries, 10))
+
+        // 3
+        function mostPopulatedCountries(array, amount) {
+            return array.sort((a, b) => b.population - a.population).map(item => {
+                return {
+                    country: item.name,
+                    population: item.population
+                }
+            }).slice(0, amount)
+        }
+
+        console.log(mostPopulatedCountries(allCountries, 10))
+
+        // 4
+        const statistics = {
+            data: [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26],
+            count: function() {
+                return this.data.length
+            },
+            sum: function() {
+                return this.data.reduce((acc, cur) => acc += cur)
+            },
+            min: function() {
+                return Math.min(...this.data)
+            },
+            max: function() {
+                return Math.max(...this.data)
+            },
+            range: function() {
+                return this.max() - this.min()
+            },
+            mean: function() {
+                return Math.round(this.sum() / this.count())
+            },
+            median: function() {
+                let val = Math.round((this.count() - 1) / 2)
+                return this.data.sort((a, b) => a - b)[val]
+            },
+            mode: function() {
+                this.data.sort((a, b) => a - b)
+                let count = 1, repeat = 1, dump = "", records = []
+
+                for (let i = 0; i < this.count(); i++) {
+
+                    dump = this.data[i]
+
+                    if (dump == this.data[i + 1]) {
+                        repeat += 1
+                    } else {
+                        records.push({
+                            mode: dump,
+                            count: repeat
+                        })
+                        repeat = 1
+                    }
+
+                }
+
+                return records.sort((a, b) => b.count - a.count).slice(0, 1)[0]
+            },
+            var: function() {
+                let mean = this.mean()
+
+                return Math.ceil((this.data.reduce((acc, cur) => acc += (cur - mean) ** 2) / this.count()) * 2) / 2
+            },
+            std: function() {
+                return Math.sqrt(this.var()).toFixed(1)
+            },
+            freqDist: function() {
+                // I dont know how to calculate frequency distribution
+            },            
+            describe: function() {
+                return `Count: ${this.count()}
+Sum: ${this.sum()}
+Min: ${this.min()}
+Max: ${this.max()}
+Range: ${this.range()}
+Mean: ${this.mean()}
+Median: ${this.median()}
+Mode: ${this.mode()}
+Variance: ${this.var()}
+Standard Deviation: ${this.std()}
+Frequency Distribution: ${this.freqDist()}`
+            }
+        }
+
+        console.log('Count:', statistics.count())
+        console.log('Sum:', statistics.sum())
+        console.log('Min:', statistics.min())
+        console.log('Max:', statistics.max())
+        console.log('Range:', statistics.range())
+        console.log('Mean:', statistics.mean())
+        console.log('Median:',statistics.median())
+        console.log('Mode:', statistics.mode())
+        console.log('Variance:',statistics.var())
+        console.log('Standard Deviation:', statistics.std())
+        console.log('Frequency Distribution:',statistics.freqDist()) 
+        console.log(statistics.describe()) 
+    
+    </script>
+
+</body>
+</html>
