@@ -13,7 +13,7 @@
 > - [x] 7) [Functions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-7)
 > - [x] 8) [Objects](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-8)
 > - [x] 9) [Higher Order Functions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-9)
-> - [ ] 10) <span style='color:orange'>Sets and Maps</span>
+> - [ ] 10) <span style=\"color:orange\">Sets and Maps</span>
 > - [ ] 11) Destructuring and Spreading
 > - [ ] 12) Regular Expressions
 > - [ ] 13) Console Object Methods
