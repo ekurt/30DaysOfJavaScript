@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="./countries.js"></script>
+    
+    <script>
+
+        const a = [4, 5, 8, 9]
+        const b = [3, 4, 5, 7]
+        const countries = ['Finland', 'Sweden', 'Norway']
+
+        // level 1
+
+        // 1
+        const set = new Set()
+
+        console.log(set)
+
+        // 2
+        for (let i = 0; i < 10; i++) {
+            set.add(i)            
+        }
+
+        console.log(set)
+
+        // 3
+        set.delete(0)
+
+        console.log(set)
+
+        // 4
+        set.clear()
+
+        console.log(set)
+
+        // 5
+        const array = ["a", "b", "c", "d", "e"]
+
+        for (const item of array) {
+            set.add(item)
+        }
+
+        console.log(set)
+
+        // 6
+        const map = new Map()
+
+        for (const country of countries) {
+            map.set(country, country.length)
+        }
+
+        console.log(map)
+
+        // level 2
+
+        console.log("a", a)
+        console.log("b", b)
+
+        // 1
+        let c = [...a, ...b]
+        let C = new Set(c)
+
+        console.log("Union", C)
+
+        // 2
+        let A = new Set(a)
+        let B = new Set(b)
+
+        c = a.filter((num) => B.has(num))
+        C = new Set(c)
+
+        console.log("Intersection", C)
+
+        // 3
+
+        c = a.filter((num) => !B.has(num))
+        C = new Set(c)
+
+        console.log("Difference", C)
+
+        // level 3
+
+        // 1
+        const langs = []
+
+        allCountries.map(item => langs.push(...item.languages))
+
+        const lang = new Set(langs)
+
+        console.log(lang.size)
+
+        // 2
+        function mostSpokenLanguages(array, amount) {
+            
+            
+
+            return lang.sort((a, b) => b.count - a.count).slice(0, amount)
+        }
+
+        //console.log(mostSpokenLanguages(allCountries, 10))
+
+
+    </script>
+
+</body>
+</html>
