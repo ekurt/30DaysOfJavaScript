@@ -2,7 +2,7 @@
 
 > ### Progress
 >
-> [####################----------------------------------------] **%33.3**
+> [######################--------------------------------------] **%36.6**
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-01)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-02)
