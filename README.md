@@ -14,8 +14,8 @@
 > - [x] 8) [Objects](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-08)
 > - [x] 9) [Higher Order Functions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-09)
 > - [x] 10) [Sets and Maps](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-10)
-> - [ ] 11) Destructuring and Spreading :trident:
-> - [ ] 12) Regular Expressions
+> - [x] 11) [Destructuring and Spreading](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-11)
+> - [ ] 12) Regular Expressions :trident:
 > - [ ] 13) Console Object Methods
 > - [ ] 14) Error Handling
 > - [ ] 15) Classes
