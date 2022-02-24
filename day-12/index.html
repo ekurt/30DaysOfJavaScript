@@ -10,6 +10,18 @@
     
     <script>
 
+        // level 1
+
+        // 1
+        let str = "He earns 4000 euro from salary per month, 10000 euro annual bonus, 5500 euro online courses per month."
+        let pattern = /\d+/g
+        let result = str.match(pattern)
+
+        let sum = result.reduce((acc, cur) => acc += parseInt(cur), 0)
+
+        console.log(sum)
+
+        // 2
         
 
     </script>
