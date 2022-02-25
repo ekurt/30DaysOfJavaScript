@@ -44,6 +44,45 @@
 
         }
 
+        // level 2
+
+        // 1
+        let paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+
+        function tenMostFrequentWords(paragraph, amount = 0) {
+
+            pattern = /[a-z]+/gi
+            result = paragraph.match(pattern)
+
+            const map = new Map(), array = [], set = new Set(result)
+
+            result = []
+
+            for (let item of set) {
+                result.push(item)
+            }
+
+            result.map(item => {
+                pattern = new RegExp(item, 'gi')
+                let count = paragraph.match(pattern).length
+
+                return array.push({word: item, count: count})
+            })
+
+            array.sort((a, b) => b.count - a.count)
+
+            if (amount == 0) {
+
+                return array
+
+            } else {
+                return array.slice(0, amount)
+            }
+
+        }
+                
+        console.log(tenMostFrequentWords(paragraph, 5))
+
     </script>
 
 </body>
