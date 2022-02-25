@@ -22,7 +22,27 @@
         console.log(sum)
 
         // 2
+        points = ['-12', '-4', '-3', '-1', '0', '4', '8']
+
+        points.reduce((acc, cur, index) => points[index] = parseInt(cur), 0)
+
+        let min = Math.min(...points)
+        let max = Math.max(...points)
+        result = max - min
+
+        console.log(result)
         
+        // 3
+        /*
+            Variable names cannot contain spaces.
+            Variable names must begin with a letter, an underscore (_) or a dollar sign ($).
+            Variable names can only contain letters, numbers, underscores, or dollar signs.
+            Variable names are case-sensitive.
+        */
+
+        function is_valid_variable(str) {
+
+        }
 
     </script>
 
