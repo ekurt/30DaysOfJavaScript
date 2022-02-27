@@ -41,8 +41,14 @@
         */
 
         function is_valid_variable(str) {
-            
+            let pattern = /^[a-zA-Z_$]+[0-9]{0,}$/g
+
+            let test = pattern.test(str)
+
+            return test
         }
+
+        console.log(is_valid_variable("first_name"))
 
         // level 2
 
