@@ -2,7 +2,7 @@
 
 > ### Progress
 >
-> [########################------------------------------------] **%39.9**
+> [##########################----------------------------------] **%43.3**
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-01)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-02)
@@ -16,8 +16,8 @@
 > - [x] 10) [Sets and Maps](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-10)
 > - [x] 11) [Destructuring and Spreading](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-11)
 > - [x] 12) [Regular Expressions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-12)
-> - [ ] 13) Console Object Methods :trident:
-> - [ ] 14) Error Handling
+> - [x] 13) [Console Object Methods](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-13)
+> - [ ] 14) Error Handling :trident:
 > - [ ] 15) Classes
 > - [ ] 16) JSON
 > - [ ] 17) Web Storages
