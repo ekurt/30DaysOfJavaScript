@@ -48,10 +48,80 @@
         console.groupEnd()
 
         // 3
-        console.group('L2 Q1')
+        console.group('L2 Q3')
         console.error('This is a error message')
         console.groupEnd()
         
+        // level 3
+
+        // 1
+        console.group('L3 Q1')
+
+            console.group('While Loop')
+                console.time('while loop')
+                    let i = 0
+                    while (i < allCountries.length) {
+                        console.log(allCountries[i].name, allCountries[i].capital)
+                        i++
+                    }
+                    console.log('%c--------------------------------------------', 'color:red')
+                console.timeEnd('while loop')
+                console.log('%c--------------------------------------------', 'color:red')
+            console.groupEnd()
+
+            console.group('For Loop')
+                console.time('regular for loop')
+                    for (let i = 0; i < allCountries.length; i++) {
+                        console.log(allCountries[i].name, allCountries[i].capital)
+                    }                    
+                    console.log('%c--------------------------------------------', 'color:red')
+                console.timeEnd('regular for loop')                
+                console.log('%c--------------------------------------------', 'color:red')
+            console.groupEnd()
+
+            console.group('For of Loop')
+                console.time('for of loop')
+                    for (const item of allCountries) {
+                        console.log(item.name, item.capital)
+                    }                    
+                    console.log('%c--------------------------------------------', 'color:red')
+                console.timeEnd('for of loop')
+                console.log('%c--------------------------------------------', 'color:red')
+            console.groupEnd()
+
+            console.group('forEach Loop')
+                console.time('forEach loop')
+                    allCountries.forEach((item) => {
+                        console.log(item.name, item.capital)
+                    })
+                    console.log('%c--------------------------------------------', 'color:red')
+                console.timeEnd('forEach loop')
+                console.log('%c--------------------------------------------', 'color:red')
+            console.groupEnd()
+
+            console.group('Results')
+                const result = [
+                    {
+                        name: 'for',
+                        ms: 79.1640625
+                    },
+                    {
+                        name: 'foreach',
+                        ms: 80.357177734375
+                    },
+                    {
+                        name: 'for of',
+                        ms: 82.497802734375
+                    },
+                    {
+                        name: 'while',
+                        ms: 99.926025390625
+                    }
+                ]
+                console.table(result)
+            console.groupEnd()
+
+        console.groupEnd()
 
     </script>
 
