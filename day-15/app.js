@@ -45,3 +45,17 @@ const dog = new Animal("Nymp", 3, "Gold", 4)
 dog.setSound = "Haow Haow!"
 
 cgc("L1 Q2", cat, cat.getInfo(), cat.getSound, dog, dog.getInfo(), dog.getSound)
+
+/*** L2 ***/
+
+// Q1
+class Cat extends Animal {
+    constructor(name, age, color, legs, sound) {
+        super(name, age, color, legs)
+        this.sound = sound
+    }
+}
+
+const dombili = new Cat("Dombili", 1, "Black & White", 4, "Meoww!")
+
+cgc("L2 Q1", dombili)
