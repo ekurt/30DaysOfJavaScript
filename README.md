@@ -2,7 +2,7 @@
 
 > ### Progress
 >
-> [############################--------------------------------] **%46.6**
+> [##############################------------------------------] **%50.0**
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-01)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-02)
@@ -18,8 +18,8 @@
 > - [x] 12) [Regular Expressions](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-12)
 > - [x] 13) [Console Object Methods](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-13)
 > - [x] 14) [Error Handling](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-14)
-> - [ ] 15) Classes :trident:
-> - [ ] 16) JSON
+> - [x] 15) [Classes](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-15)
+> - [ ] 16) JSON :trident:
 > - [ ] 17) Web Storages
 > - [ ] 18) Promises
 > - [ ] 19) Closure
