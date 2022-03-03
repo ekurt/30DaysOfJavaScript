@@ -141,3 +141,10 @@ cgc("L1 Q3", _isMarried)
 let _student = JSON.stringify(student, undefined, 2)
 
 cgc("L1 Q4", _student)
+
+/*** L2 ***/
+
+// Q1
+_student = JSON.stringify(student, ["firstName", "lastName", "skills"], 2)
+
+cgc("L2 Q1", _student)
