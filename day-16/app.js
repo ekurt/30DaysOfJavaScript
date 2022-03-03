@@ -148,3 +148,26 @@ cgc("L1 Q4", _student)
 _student = JSON.stringify(student, ["firstName", "lastName", "skills"], 2)
 
 cgc("L2 Q1", _student)
+
+/*** L3 ***/
+
+// Q1
+let _txt = JSON.parse(txt)
+
+cgc("L3 Q1", _txt)
+
+// Q2
+const getHasMaxSkills = (obj) => {
+    let count = 0,
+        user = ""
+
+    for (let [key, val] of Object.entries(obj)) {
+        if (count < val.skills.length) {
+            count = val.skills.length
+            user = key
+        }
+    }
+    return user
+}
+
+cgc("L3 Q2", getHasMaxSkills(_txt))
