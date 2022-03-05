@@ -2,7 +2,7 @@
 
 > ### Progress
 >
-> [######################################----------------------] **%63.3**
+> [########################################--------------------] **%66.6**
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-01)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-02)
@@ -23,8 +23,8 @@
 > - [x] 17) [Web Storages](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-17)
 > - [x] 18) [Promises](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-18)
 > - [x] 19) [Closure](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-19)
-> - [ ] 20) Writing Clean Code :trident:
-> - [ ] 21) DOM
+> - [x] 20) [Writing Clean Code](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-20)
+> - [ ] 21) DOM :trident:
 > - [ ] 22) Manipulating DOM Object
 > - [ ] 23) Event Listeners
 > - [ ] 24) Mini Project: Solar System
