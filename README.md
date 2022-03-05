@@ -2,7 +2,7 @@
 
 > ### Progress
 >
-> [####################################------------------------] **%59.9**
+> [######################################----------------------] **%63.3**
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-01)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-02)
@@ -22,8 +22,8 @@
 > - [x] 16) [JSON](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-16)
 > - [x] 17) [Web Storages](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-17)
 > - [x] 18) [Promises](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-18)
-> - [ ] 19) Closure :trident:
-> - [ ] 20) Writing Clean Code
+> - [x] 19) [Closure](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-19)
+> - [ ] 20) Writing Clean Code :trident:
 > - [ ] 21) DOM
 > - [ ] 22) Manipulating DOM Object
 > - [ ] 23) Event Listeners
