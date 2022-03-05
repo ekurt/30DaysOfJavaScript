@@ -25,4 +25,32 @@ function helloWord() {
 
 const hi = helloWord()
 
-console.log(hi())
+cgc("L1 Q1", hi())
+
+/*** L2 ***/
+
+// Q1
+function total(coast) {
+    let total = coast
+
+    function kdv() {
+        total = coast * 0.18
+
+        return total
+    }
+
+    function otv() {
+        total = coast * 0.90
+
+        return total
+    }
+
+    return {
+        kdv: kdv(),
+        otv: otv()
+    }
+}
+
+const account = total(100)
+
+cgc("L2 Q1", account.kdv, account.otv)
