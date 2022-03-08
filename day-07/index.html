@@ -468,16 +468,34 @@
         }
         
         console.log(arrayOfRgbColors())
-
+        
         // 5
-        function convertHexaToRgb() {
-
+        function componentToRgb(hex) {
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
         }
+
+        function hexToRgb(hex) {
+            return `rgb(${componentToRgb(hex).r}, ${componentToRgb(hex).g}, ${componentToRgb(hex).b})`
+        }
+
+        console.log(hexToRgb("#0033ff"))
 
         // 6
-        function convertRgbToHexa() {
-
+        function componentToHex(c) {
+            var hex = c.toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
         }
+
+        function rgbToHex(r, g, b) {
+            return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+        }
+
+        console.log(rgbToHex(0, 51, 255))
 
         // 7
         function generateColors(type, amount) {
@@ -526,9 +544,23 @@
         console.log(generateColors("hexa", 3))
 
         // 8
-        function shuffleArray() {
+        function shuffleArray(array) {
+            let currentIndex = array.length,  randomIndex;
 
+            while (currentIndex != 0) {
+
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex], array[currentIndex]
+                ];
+            }
+
+            console.log(array);
         }
+
+        shuffleArray(numbers);
 
         // 9
         function factorial(num) {
