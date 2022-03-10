@@ -2,7 +2,7 @@
 
 > ### Progress
 >
-> [##########################################------------------] **%69.9**
+> [############################################----------------] **%73.3**
 > 
 > - [x] 1) [Introduction](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-01)
 > - [x] 2) [Data Types](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-02)
@@ -25,8 +25,8 @@
 > - [x] 19) [Closure](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-19)
 > - [x] 20) [Writing Clean Code](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-20)
 > - [x] 21) [DOM](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-21)
-> - [ ] 22) Manipulating DOM Object :trident:
-> - [ ] 23) Event Listeners
+> - [x] 22) [Manipulating DOM Object](https://github.com/ekurt/30DaysOfJavaScript/tree/main/day-22)
+> - [ ] 23) Event Listeners :trident:
 > - [ ] 24) Mini Project: Solar System
 > - [ ] 25) Mini Project: World Countries Data Visulalization 1
 > - [ ] 26) Mini Project: World Countries Data Visulalization 2
